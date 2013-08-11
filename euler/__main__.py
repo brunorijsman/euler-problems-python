@@ -11,3 +11,4 @@ class EulerTest(unittest.TestCase):
         self.assertEqual(problem002.solve(), 4613732)
 
 unittest.main()
+
