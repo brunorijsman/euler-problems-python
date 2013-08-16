@@ -20,4 +20,3 @@ class EulerTest(unittest.TestCase):
             self.assertEqual(problem088.solve(), 7587457)
 
 unittest.main()
-

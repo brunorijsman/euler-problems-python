@@ -37,21 +37,21 @@ def consider(factors, product, max_size):
 
 def show(factors, ones, new_best, size):
     padded = [1] * ones + factors
-    print " * ".join(map(str, padded)), "=",
-    print " + ".join(map(str, padded)), "=",
-    print sum(padded),
+    print(*padded, sep = " * ", end = " = ")
+    print(*padded, sep = " + ", end = " = ")
+    print(sum(padded), end = " ")
     if new_best:
-        print "new best for size", size
+        print("new best for size", size)
     else:
-        print "not best for size", size
+        print("not best for size", size)
 
 def show_best(max_size):
-    print
-    print "*** Lowest product for each size ***"
+    print()
+    print ("*** Lowest product for each size ***")
     for size in range(2, max_size + 1):
-        print size, "->", best[size]
-    print
-    print "*** Unique best products ***"
-    print best
-    print best.values()
-    print set(best.values())
+        print(size, "->", best[size])
+    print()
+    print("*** Unique best products ***")
+    print(best)
+    print(best.values())
+    print(set(best.values()))
