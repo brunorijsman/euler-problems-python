@@ -30,5 +30,3 @@ def solve_max(max):
 
 def solve():
     return solve_max(10000000)
-
-print(solve_max(1000))
