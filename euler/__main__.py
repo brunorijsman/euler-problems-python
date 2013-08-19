@@ -1,6 +1,7 @@
 import problem001
 import problem002
 import problem074
+import problem078
 import problem088
 import problem092
 import unittest
@@ -19,6 +20,11 @@ class EulerTest(unittest.TestCase):
         self.assertEqual(problem074.solve_max(5000), 18)
         if not only_fast_tests:
             self.assertEqual(problem074.solve_max(1000000), 402)
+
+    def test_problem078(self):
+        self.assertEqual(problem078.solve_divisor(1000), 449)
+        if not only_fast_tests:
+            self.assertEqual(problem078.solve(), 55374)
 
     def test_problem088(self):
         self.assertEqual(problem088.solve_max_size(6), 30)
