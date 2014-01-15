@@ -4,6 +4,7 @@ import problem074
 import problem078
 import problem088
 import problem092
+import numbers
 import unittest
 
 only_fast_tests = True
