@@ -1,4 +1,4 @@
-from numbers import *
+from euler_numbers import *
 
 def four_digits(fun):
   result = []

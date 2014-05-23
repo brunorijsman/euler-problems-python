@@ -29,7 +29,7 @@ def heptagonal(n):
 def octagonal(n):
   return n * (3*n-2)
 
-class NumberTest(unittest.TestCase):
+class EulerNumbersTest(unittest.TestCase):
 
   def test_number_digits(self):
     self.assertEqual(number_digits(1), 1)
