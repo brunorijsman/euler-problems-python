@@ -30,3 +30,4 @@ def solve_max(max):
 
 def solve():
     return solve_max(10000000)
+
