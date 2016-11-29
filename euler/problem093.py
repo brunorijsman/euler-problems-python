@@ -8,7 +8,7 @@ def solve():
         if ht > best_highest_target:
             best_highest_target = ht
             best_number = number
-    print best_number
+    print(best_number)
 
 def highest_target(digits):
     frac_digits = tuple([Fraction(d) for d in digits])
